@@ -1,7 +1,7 @@
 import streamlit as st
 from datetime import date
 
-st.title("📱 Track Your Usage")
+st.title("Track Your Usage")
 
 # Initialize session state
 if 'usage_logs' not in st.session_state:

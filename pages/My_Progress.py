@@ -20,8 +20,8 @@ if 'logged_in' not in st.session_state or not st.session_state.logged_in:
 
 # Sidebar with user info and logout
 with st.sidebar:
-    st.markdown(f"### 👤 {st.session_state.username}")
-    if st.button("🚪 Logout", use_container_width=True):
+    st.markdown(f"###  {st.session_state.username}")
+    if st.button(" Logout", use_container_width=True):
         st.session_state.logged_in = False
         st.session_state.username = None
         st.session_state.points = 0
@@ -53,7 +53,7 @@ else:
     st.plotly_chart(fig2, use_container_width=True)
 
     # Stats
-    st.subheader("📈 Statistics")
+    st.subheader("Statistics")
     col1, col2 = st.columns(2)
     with col1:
         st.metric("Total Minutes Tracked", df['time_spent'].sum())

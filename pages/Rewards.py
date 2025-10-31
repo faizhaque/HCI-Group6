@@ -20,19 +20,19 @@ def save_data(data, username):
 
 # Check if user is logged in
 if 'logged_in' not in st.session_state or not st.session_state.logged_in:
-    st.warning("⚠️ Please login first!")
+    st.warning("Please login first!")
     st.stop()
 
 # Sidebar with user info and logout
 with st.sidebar:
-    st.markdown(f"### 👤 {st.session_state.username}")
-    if st.button("🚪 Logout", use_container_width=True):
+    st.markdown(f"### {st.session_state.username}")
+    if st.button("Logout", use_container_width=True):
         st.session_state.logged_in = False
         st.session_state.username = None
         st.session_state.points = 0
         st.switch_page("app.py")
 
-st.title("🎁 Rewards Shop")
+st.title("Rewards Shop")
 
 # Load user data
 data = load_data(st.session_state.username)
@@ -87,7 +87,7 @@ for reward in rewards:
             # Update session state
             st.session_state.points = data['points']
 
-            st.success(f"🎉 Redeemed: {reward['name']}!")
+            st.success(f"Redeemed: {reward['name']}!")
             st.balloons()
             st.rerun()
 
@@ -97,10 +97,10 @@ st.markdown("---")
 st.subheader("🏆 Your Redeemed Rewards")
 if data['redeemed']:
     for item in reversed(data['redeemed'][-5:]):
-        st.write(f"✅ {item['item']} - {item['date']} ({item['points']} points)")
+        st.write(f" {item['item']} - {item['date']} ({item['points']} points)")
 else:
     st.info("No rewards redeemed yet. Keep earning points!")
 
 # Motivational message
 st.markdown("---")
-st.info("💡 **Tip:** Log your usage daily to earn more points and unlock rewards!")
+st.info(" **Tip:** Log your usage daily to earn more points and unlock rewards!")

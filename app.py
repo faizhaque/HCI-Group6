@@ -120,7 +120,7 @@ else:
             st.session_state.points = 0
             st.rerun()
 
-    st.title("🌊 Social Media Usage Tracker")
+    st.title("Social Media Usage Tracker")
     st.subheader(f"Welcome, {st.session_state.username}!")
 
     # Load user-specific data
