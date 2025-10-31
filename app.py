@@ -48,7 +48,7 @@ if 'points' not in st.session_state:
 
 # Login/Signup Page
 if not st.session_state.logged_in:
-    st.set_page_config(page_title="Social Media Tracker - Login", page_icon="🌊", layout="centered")
+    st.set_page_config(page_title="Social Media Tracker - Login", page_icon="", layout="centered")
 
     # Header
     st.markdown("<h1 style='text-align: center;'>🌊 Social Media Usage Tracker</h1>", unsafe_allow_html=True)
