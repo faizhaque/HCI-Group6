@@ -17,18 +17,18 @@ IDE (optional but recommended):
 Steps to Run Program:
 
 
-Step 1: Clone the repository
+Step 1: Clone the repository.
 
 
 git clone https://github.com/your-username/HCI-Group6.git
 
 
-Open the folder in the IDE
+Open the folder in your IDE.
 
 
-cd into HCI-Group6
+cd into HCI-Group6 in the terminal.
 
-Step 2: Install Required Packages:
+Step 2: Install Required Packages By Running These Commands:
 
 
 pip install streamlit
