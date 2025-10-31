@@ -12,3 +12,11 @@ IDE (optional but recommended):
   PyCharm
   VS Code
   Or any IDE of your choice
+
+
+DO THESE INSTALLATIONS:
+pip install plotly
+pip install streamlit
+
+TO RUN THE PROGRAM:
+On app.py go to the terminal and type in - **streamlit run app.py**
