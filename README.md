@@ -47,9 +47,9 @@ pip install plotly
 Step 3: Run the Application:
 
 
-Run application by using this command in terminal: streamlit run app.py
+Run application by using this command in the terminal: streamlit run app.py
 
-Once in the app, Sign up and create account. Then Login and you will be able to view everything.
+Once in the app, Sign up and create account. Login and you will be able to view everything.
 
 If you need assistance or need to contact us here is our uf emails:
 
