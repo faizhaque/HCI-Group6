@@ -50,3 +50,7 @@ Step 3: Run the Application:
 Run application by using this command in terminal: streamlit run app.py
 
 Once in the app, Sign up and create account. Then Login and you will be able to view everything.
+
+If you need assistance for any help here is our uf emails:
+
+ yerramesetty.as@ufl.edu, faizanhaque@ufl.edu, nmishra@ufl.edu, skoduvayur@ufl.edu,  satvikvippatoori@ufl.edu
