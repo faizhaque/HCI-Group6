@@ -15,7 +15,7 @@ def load_data(username):
 
 # Check if user is logged in
 if 'logged_in' not in st.session_state or not st.session_state.logged_in:
-    st.warning("⚠️ Please login first!")
+    st.warning("Please login first!")
     st.stop()
 
 # Sidebar with user info and logout

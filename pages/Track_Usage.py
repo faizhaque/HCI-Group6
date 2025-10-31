@@ -27,7 +27,7 @@ if st.button("Log Usage", type="primary"):
     # Calculate points
     if time_spent <= daily_goal:
         points_earned = 10
-        st.success(f"✅ Great job! You stayed under your goal. +{points_earned} points!")
+        st.success(f"Great job! You stayed under your goal. +{points_earned} points!")
     else:
         points_earned = 5
         st.warning(f"You went over your goal, but tracking is progress! +{points_earned} points")

@@ -57,7 +57,7 @@ if not st.session_state.logged_in:
     st.markdown("---")
 
     # Tabs for Login and Signup
-    tab1, tab2 = st.tabs(["🔐 Login", "📝 Sign Up"])
+    tab1, tab2 = st.tabs(["Login", "Sign Up"])
 
     with tab1:
         st.subheader("Login to Your Account")
