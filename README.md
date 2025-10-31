@@ -23,7 +23,10 @@ Step 1: Clone the repository
 git clone https://github.com/your-username/HCI-Group6.git
 
 
-cd HCI-Group6
+Open the folder in the IDE
+
+
+cd into HCI-Group6
 
 Step 2: Install Required Packages:
 
