@@ -13,8 +13,14 @@ Important: During installation, check "Add Python to PATH"
 
 
 IDE (optional but recommended):
+
+
   PyCharm
+
+  
   VS Code
+
+  
   Or any IDE of your choice
 
 
