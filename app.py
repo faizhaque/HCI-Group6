@@ -51,7 +51,7 @@ if not st.session_state.logged_in:
     st.set_page_config(page_title="Social Media Tracker - Login", page_icon="", layout="centered")
 
     # Header
-    st.markdown("<h1 style='text-align: center;'>🌊 Social Media Usage Tracker</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'> Social Media Usage Tracker</h1>", unsafe_allow_html=True)
     st.markdown("<p style='text-align: center;'>Track your social media usage and earn rewards!</p>",
                 unsafe_allow_html=True)
     st.markdown("---")
@@ -109,12 +109,12 @@ if not st.session_state.logged_in:
 
 else:
     # Main App (when logged in)
-    st.set_page_config(page_title="Social Media Tracker", page_icon="🌊", layout="wide")
+    st.set_page_config(page_title="Social Media Tracker", page_icon="", layout="wide")
 
     # Sidebar with logout
     with st.sidebar:
         st.markdown(f"### 👤 {st.session_state.username}")
-        if st.button("🚪 Logout", use_container_width=True):
+        if st.button(" Logout", use_container_width=True):
             st.session_state.logged_in = False
             st.session_state.username = None
             st.session_state.points = 0
@@ -135,4 +135,4 @@ else:
     with col3:
         st.metric("Logs This Week", len(data.get('usage_logs', [])))
 
-    st.info("👈 Use the sidebar to navigate between pages")
+    st.info(" Use the sidebar to navigate between pages")
