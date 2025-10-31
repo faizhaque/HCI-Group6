@@ -20,7 +20,7 @@ def save_data(data):
     with open('data.json', 'w') as f:
         json.dump(data, f)
 
-st.set_page_config(page_title="Social Media Tracker", page_icon="🌊", layout="wide")
+st.set_page_config(page_title="Social Media Tracker", page_icon="", layout="wide")
 
 st.title("Social Media Usage Tracker")
 st.subheader(f"Welcome, {st.session_state.user}!")
