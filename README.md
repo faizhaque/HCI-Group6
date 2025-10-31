@@ -17,10 +17,8 @@ IDE (optional but recommended):
 
       PyCharm
     
-      
       VS Code
     
-      
       Or any IDE of your choice
 
 
