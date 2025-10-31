@@ -8,9 +8,9 @@ import pandas as pd
 st.markdown("""
 <style>
 /* Main background */
-    .stApp {
-        background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
-    }
+.stApp {
+    background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+}
 
 /* Sidebar styling - LIGHTER VERSION */
 [data-testid="stSidebar"] {
@@ -129,6 +129,18 @@ h1 {
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
+/* Logout button styling - BLACK */
+.stButton>button[kind="secondary"] {
+    background-color: #1e293b !important;
+    color: white !important;
+    border: none !important;
+}
+
+.stButton>button[kind="secondary"]:hover {
+    background-color: #334155 !important;
+    color: white !important;
+}
+
 /* Hide branding */
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
@@ -160,7 +172,6 @@ with st.sidebar:
         <div class="user-role">Member</div>
     </div>
     """, unsafe_allow_html=True)
-
 
     # Logout button
     if st.button("🚪 Logout", use_container_width=True, type="secondary"):
@@ -325,7 +336,6 @@ else:
     )
 
     st.plotly_chart(fig2, use_container_width=True, config={'displayModeBar': False})
-
     st.markdown('</div>', unsafe_allow_html=True)
 
     # Chart 3: Goal Achievement (Pie chart)
@@ -358,7 +368,7 @@ else:
     st.markdown("<br>", unsafe_allow_html=True)
 
     # Insights section
-    st.markdown("### 💡 Insights & Tips")
+    st.markdown("###  Insights & Tips")
 
     total_minutes = df['time_spent'].sum()
     avg_daily = df['time_spent'].mean()
@@ -369,19 +379,19 @@ else:
 
     with col1:
         if avg_daily < 60:
-            st.success(f"🎉 **Great job!** Your average daily usage of {avg_daily:.0f} minutes is under 1 hour!")
+            st.success(f" **Great job!** Your average daily usage of {avg_daily:.0f} minutes is under 1 hour!")
         elif avg_daily < 120:
-            st.info(f"📱 Your average daily usage is {avg_daily:.0f} minutes. Consider reducing it slightly!")
+            st.info(f" Your average daily usage is {avg_daily:.0f} minutes. Consider reducing it slightly!")
         else:
-            st.warning(f"⚠️ Your average daily usage is {avg_daily:.0f} minutes. Try setting lower goals!")
+            st.warning(f" Your average daily usage is {avg_daily:.0f} minutes. Try setting lower goals!")
 
     with col2:
         success_rate = (goals_met / total_logs * 100) if total_logs > 0 else 0
         if success_rate >= 70:
-            st.success(f"🏆 **Excellent!** You've met your goals {success_rate:.0f}% of the time!")
+            st.success(f" **Excellent!** You've met your goals {success_rate:.0f}% of the time!")
         elif success_rate >= 50:
-            st.info(f"👍 You've met your goals {success_rate:.0f}% of the time. Keep improving!")
+            st.info(f" You've met your goals {success_rate:.0f}% of the time. Keep improving!")
         else:
-            st.warning(f"💪 You've met your goals {success_rate:.0f}% of the time. Try setting more realistic goals!")
+            st.warning(f" You've met your goals {success_rate:.0f}% of the time. Try setting more realistic goals!")
 
 st.markdown("<br><br>", unsafe_allow_html=True)

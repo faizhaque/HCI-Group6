@@ -6,9 +6,9 @@ import json
 st.markdown("""
 <style>
 /* Main background */
-    .stApp {
-        background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
-    }
+.stApp {
+    background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+}
 
 /* Sidebar styling - LIGHTER VERSION */
 [data-testid="stSidebar"] {
@@ -163,6 +163,18 @@ h1 {
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
+/* Logout button styling - BLACK */
+.stButton>button[kind="secondary"] {
+    background-color: #1e293b !important;
+    color: white !important;
+    border: none !important;
+}
+
+.stButton>button[kind="secondary"]:hover {
+    background-color: #334155 !important;
+    color: white !important;
+}
+
 /* Hide branding */
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
@@ -200,7 +212,6 @@ with st.sidebar:
         <div class="user-role">Member</div>
     </div>
     """, unsafe_allow_html=True)
-
 
     # Logout button
     if st.button("🚪 Logout", use_container_width=True, type="secondary"):

@@ -6,9 +6,9 @@ import json
 st.markdown("""
 <style>
 /* Main background */
-    .stApp {
-        background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
-    }
+.stApp {
+    background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+}
 
 /* Sidebar styling - LIGHTER VERSION */
 [data-testid="stSidebar"] {
@@ -100,6 +100,18 @@ h1 {
     box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
+/* Logout button styling - BLACK */
+.stButton>button[kind="secondary"] {
+    background-color: #1e293b !important;
+    color: white !important;
+    border: none !important;
+}
+
+.stButton>button[kind="secondary"]:hover {
+    background-color: #334155 !important;
+    color: white !important;
+}
+
 /* Log entry card */
 .log-entry {
     background: rgba(255,255,255,0.95);
@@ -159,7 +171,6 @@ with st.sidebar:
     </div>
     """, unsafe_allow_html=True)
 
-
     # Logout button
     if st.button("🚪 Logout", use_container_width=True, type="secondary"):
         st.session_state.logged_in = False
@@ -196,13 +207,13 @@ st.markdown('<div class="input-card">', unsafe_allow_html=True)
 
 # Select app with emoji
 app_options = {
-    "📷 Instagram": "Instagram",
-    "🎵 TikTok": "TikTok",
-    "🐦 Twitter/X": "Twitter/X",
-    "👥 Facebook": "Facebook",
-    "👻 Snapchat": "Snapchat",
-    "📺 YouTube": "YouTube",
-    "🤖 Reddit": "Reddit"
+    "Instagram": "Instagram",
+    "TikTok": "TikTok",
+    "Twitter/X": "Twitter/X",
+    "Facebook": "Facebook",
+    "Snapchat": "Snapchat",
+    "YouTube": "YouTube",
+    "Reddit": "Reddit"
 }
 
 selected = st.selectbox("📱 Choose Platform", list(app_options.keys()))
@@ -286,11 +297,11 @@ st.markdown("<br>", unsafe_allow_html=True)
 
 # Motivational tips
 tips = [
-    "💡 Set realistic goals to stay motivated!",
-    "🎯 Consistency is key - log daily for best results!",
-    "🏆 Small improvements add up over time!",
-    "⏰ Try using a timer to track your usage more accurately!",
-    "🌟 Celebrate your wins, no matter how small!"
+    "Set realistic goals to stay motivated!",
+    "Consistency is key - log daily for best results!",
+    "Small improvements add up over time!",
+    "Try using a timer to track your usage more accurately!",
+    "Celebrate your wins, no matter how small!"
 ]
 
 import random

@@ -63,6 +63,18 @@ def load_css():
         box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
 
+    /* Logout button styling - BLACK */
+    .stButton>button[kind="secondary"] {
+        background-color: #1e293b !important;
+        color: white !important;
+        border: none !important;
+    }
+
+    .stButton>button[kind="secondary"]:hover {
+        background-color: #334155 !important;
+        color: white !important;
+    }
+
     /* Tab styling */
     .stTabs [data-baseweb="tab-list"] {
         gap: 2rem;
@@ -280,12 +292,11 @@ else:
         # User profile card
         st.markdown(f"""
         <div class="user-card">
-            <div class="user-avatar">🐱‍🐉</div>
+            <div class="user-avatar">👤</div>
             <div class="user-name">{st.session_state.username}</div>
             <div class="user-role">Member</div>
         </div>
         """, unsafe_allow_html=True)
-
 
         # Logout button with icon
         if st.button("🚪 Logout", use_container_width=True, type="secondary"):
@@ -299,7 +310,7 @@ else:
 
     # Main content
     st.markdown("# 🌊 Dashboard")
-    st.markdown(f"### Welcome back, **{st.session_state.username}**! 👋")
+    st.markdown(f"### Welcome back, **{st.session_state.username}**!")
     st.markdown("<br>", unsafe_allow_html=True)
 
     # Load user-specific data
@@ -344,7 +355,7 @@ else:
     st.markdown("<br><br>", unsafe_allow_html=True)
 
     # Tips section
-    st.info("💡 **Pro Tip:** Log your usage daily to maintain your streak and earn bonus points!")
+    st.info("**Pro Tip:** Log your usage daily to maintain your streak and earn bonus points!")
 
     # Recent activity
     if data.get('usage_logs', []):
