@@ -16,11 +16,11 @@ IDE (optional but recommended):
 
 Steps to Run Program:
 Step 1: Clone the repository
-git clone https://github.com/your-username/HCI-Group6.git
+git clone https://github.com/your-username/HCI-Group6.git\
 cd HCI-Group6
 
 Step 2: Install Required Packages:
-pip install streamlit
+pip install streamlit\
 pip install plotly
 
 Step 3: Run the Application:
