@@ -113,7 +113,7 @@ else:
 
     # Sidebar with logout
     with st.sidebar:
-        st.markdown(f"### 👤 {st.session_state.username}")
+        st.markdown(f"### {st.session_state.username}")
         if st.button(" Logout", use_container_width=True):
             st.session_state.logged_in = False
             st.session_state.username = None
