@@ -15,7 +15,7 @@ IDE (optional but recommended):
 
 
 DO THESE INSTALLATIONS:
-pip install plotly
+pip install plotly, 
 pip install streamlit
 
 TO RUN THE PROGRAM:
